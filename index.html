@@ -16,7 +16,7 @@
         <div class="container">
 
             <a class="navbar-brand fw-bold fs-4 text-white" href="#">Mohammed Maruf Islam</a>
-
+            <a href="resume.pdf" class="btn btn-outline-light btn-lg" download>Download Resume</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,6 +34,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white fw-semibold" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#projects">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -275,6 +282,64 @@
         </div>
     </section>
 
+    <section class="container py-5" id="projects">
+        <h2 class="text-center mb-5 fw-bold">Technical Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <!-- <img src="project1-thumbnail.jpg" class="card-img-top" alt="Project 1"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">NSTU Sportify</h5>
+                        <p class="card-text">A sports management system built to manage events, teams, matches, and
+                            tournament results for NSTU. The project integrates a Django backend and a Flutter frontend
+                            for an interactive user experience.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-primary">Flutter</span>
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-primary">MySQL</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/NSTU-Sportify" class="btn btn-outline-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <!-- <img src="project1-thumbnail.jpg" class="card-img-top" alt="Project 1"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">SkyMate</h5>
+                        <p class="card-text">
+                            This is a simple weather forecasting software, using OpenWeather API (<a
+                                href="https://openweathermap.org/" target="_blank">https://openweathermap.org/</a>). I
+                            followed the MVC (Model-Controller-View) model here.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-primary">Java</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/SkyMate" class="btn btn-outline-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <!-- <img src="project1-thumbnail.jpg" class="card-img-top" alt="Project 1"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">DigitEyes</h5>
+                        <p class="card-text">
+                            This Java software is designed to extract digits from handwritten images. It includes a
+                            simple user interface where users can select an image containing single handwritten digit,
+                            and the software will display the extracted digit as output.I used Machine Learning model
+                            without using any in built library.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-primary">Java</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/DigitEyes" class="btn btn-outline-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="bg-light py-5" id="blogs">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">Blogs & Tech Writings</h2>
@@ -351,6 +416,34 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
