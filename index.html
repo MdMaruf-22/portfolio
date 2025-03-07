@@ -7,439 +7,500 @@
     <title>Mohammed Maruf Islam - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Mohammed Maruf Islam - Portfolio showcasing academic achievements, technical projects, competitive programming journey, and leadership experiences in Software Engineering.">
+    <meta name="keywords"
+        content="Portfolio, Software Engineer, Competitive Programming, Technical Projects, Mohammed Maruf Islam">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-white" href="#">Mohammed Maruf Islam</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#profile">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#programming">CP Journey</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
-                </ul>
-                <a href="resume.pdf" class="btn btn-outline-light btn-lg d-lg-none resume-btn" download>Download Resume</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4 text-white" href="#">Mohammed Maruf Islam</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#programming">CP
+                                Journey</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold"
+                                href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold"
+                                href="#achievements">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <a href="resume.pdf" class="btn btn-outline-light btn-lg d-none d-lg-block" download>Download Resume</a>
             </div>
-            <a href="resume.pdf" class="btn btn-outline-light btn-lg d-none d-lg-block" download>Download Resume</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="hero-section text-center">
-        <div class="container">
-            <img src="image/profile_image.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-4">
-            <h1 class="display-4 fw-bold mb-3">Mohammed Maruf Islam</h1>
-            <p class="lead mb-4">Software Engineer | Competitive Programmer | Tech Enthusiast</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="https://github.com/MdMaruf-22" class="btn btn-light btn-lg">GitHub</a>
-                <a href="https://linkedin.com/in/mohammed-maruf-islam-545280248/" class="btn btn-outline-light btn-lg">LinkedIn</a>
+    <main>
+        <section class="hero-section text-center">
+            <div class="container">
+                <img src="image/profile_image.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-4"
+                    loading="lazy">
+                <h1 class="display-4 fw-bold mb-3">Mohammed Maruf Islam</h1>
+                <p class="lead mb-4">Software Engineer | Competitive Programmer | Tech Enthusiast</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://github.com/MdMaruf-22" class="btn btn-light btn-lg">GitHub</a>
+                    <a href="https://linkedin.com/in/mohammed-maruf-islam-545280248/"
+                        class="btn btn-outline-light btn-lg">LinkedIn</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container py-5" id="profile">
-        <h2 class="text-center mb-5 fw-bold">Academic Background</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card h-100 shadow">
-                    <div class="card-header bg-primary text-white">
-                        <h5 class="mb-0">Education Timeline</h5>
-                    </div>
-                    <div class="card-body timeline">
-                        <div class="timeline-item">
-                            <h5>BSSE in Software Engineering</h5>
-                            <p class="text-muted mb-1">Noakhali Science and Technology University</p>
-                            <small class="text-primary">2022 - Present</small>
-                            <p class="mt-2">Current GPA: 3.75/4.00</p>
+        <section class="container py-5" id="skills">
+            <h2 class="text-center mb-5 fw-bold">Technical Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Technical Expertise</h5>
                         </div>
-                        <div class="timeline-item">
-                            <h5>Higher Secondary Certificate</h5>
-                            <p class="text-muted mb-1">Govt. Hazi Muhammad Mohsin College</p>
-                            <small class="text-primary">2020</small>
-                            <p class="mt-2">GPA: 5.00/5.00</p>
-                        </div>
-                        <div class="timeline-item">
-                            <h5>Secondary School Certificate</h5>
-                            <p class="text-muted mb-1">Nasirabad Govt High School</p>
-                            <small class="text-primary">2018</small>
-                            <p class="mt-2">GPA: 5.00/5.00</p>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <h6 class="mb-3"><i class="fas fa-code me-2"></i>Programming Languages</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary skill-badge">C</span>
+                                        <span class="badge bg-primary skill-badge">C++</span>
+                                        <span class="badge bg-primary skill-badge">Java</span>
+                                        <span class="badge bg-primary skill-badge">Python</span>
+                                        <span class="badge bg-primary skill-badge">JavaScript</span>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 mb-4">
+                                    <h6 class="mb-3"><i class="fas fa-cubes me-2"></i>Frameworks & Libraries</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-purple skill-badge">Django</span>
+                                        <span class="badge bg-purple skill-badge">Flutter</span>
+                                        <span class="badge bg-purple skill-badge">Laravel</span>
+                                        <span class="badge bg-purple skill-badge">Bootstrap</span>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 mb-4">
+                                    <h6 class="mb-3"><i class="fas fa-globe me-2"></i>Web Technologies</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-success skill-badge">HTML5</span>
+                                        <span class="badge bg-success skill-badge">CSS3</span>
+                                        <span class="badge bg-success skill-badge">REST API</span>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 mb-4">
+                                    <h6 class="mb-3"><i class="fas fa-tools me-2"></i>Tools & Databases</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-warning text-dark skill-badge">MySQL</span>
+                                        <span class="badge bg-warning text-dark skill-badge">Firebase</span>
+                                        <span class="badge bg-warning text-dark skill-badge">Git</span>
+                                        <span class="badge bg-warning text-dark skill-badge">VS Code</span>
+                                        <span class="badge bg-warning text-dark skill-badge">Postman</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="card h-100 shadow">
-                    <div class="card-header bg-primary text-white">
-                        <h5 class="mb-0">Technical Skills</h5>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="mt-2">Programming Languages</h6>
-                        <div class="d-flex flex-wrap">
-                            <span class="badge bg-primary skill-badge">Java</span>
-                            <span class="badge bg-primary skill-badge">Python</span>
-                            <span class="badge bg-primary skill-badge">JavaScript</span>
-                            <span class="badge bg-primary skill-badge">C</span>
-                            <span class="badge bg-primary skill-badge">C++</span>
-                        </div>
-
-                        <h6 class="mt-4">Web Technologies</h6>
-                        <div class="d-flex flex-wrap">
-                            <span class="badge bg-success skill-badge">HTML5</span>
-                            <span class="badge bg-success skill-badge">CSS3</span>
-                            <span class="badge bg-success skill-badge">Bootstrap</span>
-                            <span class="badge bg-success skill-badge">PHP</span>
-                            <span class="badge bg-success skill-badge">Laravel</span>
-                        </div>
-
-                        <h6 class="mt-4">Tools & Databases</h6>
-                        <div class="d-flex flex-wrap">
-                            <span class="badge bg-warning text-dark skill-badge">MySQL</span>
-                            <span class="badge bg-warning text-dark skill-badge">Git</span>
-                            <span class="badge bg-warning text-dark skill-badge">IntelliJ</span>
-                            <span class="badge bg-warning text-dark skill-badge">VS Code</span>
-                            <span class="badge bg-warning text-dark skill-badge">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Notable Achievements</h2>
+        </section>
+        <section class="container py-5" id="projects">
+            <h2 class="text-center mb-5 fw-bold">Technical Projects</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 shadow">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3 text-primary">🏆</div>
-                            <h5>ICPC 2024</h5>
-                            <p class="text-muted">Dhaka Regional Participant</p>
+                        <img src="image/NSTU_Sportify.jpg" class="card-img-top" alt="NSTU Sportify System Interface">
+                        <div class="card-body">
+                            <h5 class="card-title">NSTU Sportify 🏆</h5>
+                            <ul class="card-text list-unstyled">
+                                <li class="mb-2">🏟️ <strong>Sports Management System:</strong> Manages teams, matches,
+                                    and tournaments</li>
+                                <li class="mb-2">🧑 <strong>Tech Stack:</strong> Django backend + Flutter frontend
+                                </li>
+                                <li class="mb-2">🔐 <strong>Role-Based Access:</strong> Admins, representatives, and
+                                    users</li>
+                                <li class="mb-2">📊 <strong>Live Updates:</strong> Real-time match schedules & results
+                                </li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-primary">Flutter</span>
+                                <span class="badge bg-primary">Django</span>
+                                <span class="badge bg-primary">MySQL</span>
+                            </div>
+                            <a href="https://github.com/MdMaruf-22/NSTU-Sportify" class="btn btn-outline-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card h-100 shadow">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3 text-primary">🥇</div>
-                            <h5>1st Position</h5>
-                            <p class="text-muted">Inter Department Programming Contest 2022</p>
+                        <img src="image/Skymate2.png" class="card-img-top" alt="SkyMate Weather Interface">
+                        <div class="card-body">
+                            <h5 class="card-title">SkyMate ⛅</h5>
+                            <ul class="card-text list-unstyled">
+                                <li class="mb-2">🌤️ <strong>Real-Time Weather:</strong> OpenWeather API integration
+                                </li>
+                                <li class="mb-2">🏛️ <strong>MVC Architecture:</strong> Separation of concerns</li>
+                                <li class="mb-2">📱 <strong>Intuitive UI:</strong> Clean and user-friendly interface
+                                </li>
+                                <li class="mb-2">🌍 <strong>Global Coverage:</strong> Supports worldwide locations</li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-primary">Java</span>
+                                <span class="badge bg-primary">API</span>
+                            </div>
+                            <a href="https://github.com/MdMaruf-22/SkyMate" class="btn btn-outline-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card h-100 shadow">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3 text-primary">🥉</div>
-                            <h5>3rd Position</h5>
-                            <p class="text-muted">IT Club Programming Contest 2022</p>
+                        <img src="image/DigitEyes.png" class="card-img-top" alt="DigitEyes Recognition Example">
+                        <div class="card-body">
+                            <h5 class="card-title">DigitEyes 🔢</h5>
+                            <ul class="card-text list-unstyled">
+                                <li class="mb-2">🖼️ <strong>Image Processing:</strong> Handwritten digit recognition
+                                </li>
+                                <li class="mb-2">🤖 <strong>ML Model:</strong> Built from scratch without libraries</li>
+                                <li class="mb-2">📸 <strong>Easy Upload:</strong> Simple image selection</li>
+                                <li class="mb-2">📊 <strong>High Accuracy:</strong> Reliable detection rate</li>
+                            </ul>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-primary">Java</span>
+                                <span class="badge bg-primary">ML</span>
+                            </div>
+                            <a href="https://github.com/MdMaruf-22/DigitEyes" class="btn btn-outline-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container py-5" id="programming">
-        <h2 class="text-center mb-5 fw-bold">Competitive Programming Journey</h2>
-        <div class="row g-4">
-            <div class="col-md-12">
-                <div class="card shadow-lg border-0">
-                    <div class="card-body">
-                        <h4 class="card-title mb-4 text-center text-secondary">Coding Profiles & Statistics</h4>
-                        <div class="row">
+        <section class="container py-5" id="programming">
+            <h2 class="text-center mb-5 fw-bold">Competitive Programming Journey</h2>
+            <div class="row g-4">
+                <div class="col-md-12">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4 text-center text-secondary">Coding Profiles & Statistics</h4>
+                            <div class="row">
 
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-header bg-dark text-white">
-                                        <a href="https://codeforces.com/profile/DAR5EID" target="_blank"
-                                            class="text-white text-decoration-none fw-bold">
-                                            Codeforces 🔗
-                                        </a>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-header bg-dark text-white">
+                                            <a href="https://codeforces.com/profile/DAR5EID" target="_blank"
+                                                class="text-white text-decoration-none fw-bold">
+                                                Codeforces 🔗
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">DAR5EID</h5>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Problems Solved: <span class="badge bg-primary">553</span></li>
+                                                <li class="list-group-item">Max Rating: 
+                                                    <span class="badge bg-success">1415</span> 
+                                                    <span class="badge bg-info">Specialist</span>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary">DAR5EID</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Problems Solved: <span
-                                                    class="badge bg-primary">553</span></li>
-                                            <li class="list-group-item">Max Rating: <span
-                                                    class="badge bg-success">1415</span></li>
-                                        </ul>
+                                </div>
+                                
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-header bg-warning text-dark">
+                                            <a href="https://www.beecrowd.com.br/judge/en/profile/644914"
+                                                target="_blank" class="text-dark text-decoration-none fw-bold">
+                                                Beecrowd 🔗
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">DAR5EID</h5>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Problems Solved: <span
+                                                        class="badge bg-primary">173</span></li>
+                                                <li class="list-group-item">Points: <span
+                                                        class="badge bg-success">473.57</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-header bg-danger text-white">
+                                            <a href="https://leetcode.com/DAR5EID/" target="_blank"
+                                                class="text-white text-decoration-none fw-bold">
+                                                LeetCode 🔗
+                                            </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">DAR5EID</h5>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Problems Solved: <span
+                                                        class="badge bg-primary">114</span></li>
+                                                <li class="list-group-item">Contests Rating: <span
+                                                        class="badge bg-success">1,413</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-header bg-info text-white">
+                                            <strong>Overall Statistics</strong>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Total Problems Solved: <span
+                                                        class="badge bg-primary">1000+</span></li>
+                                                <li class="list-group-item">Contests Participated: <span
+                                                        class="badge bg-success">100+</span></li>
+                                                <li class="list-group-item">Active Platforms: <span
+                                                        class="badge bg-warning text-dark">7+</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-header bg-warning text-dark">
-                                        <a href="https://www.beecrowd.com.br/judge/en/profile/644914" target="_blank"
-                                            class="text-dark text-decoration-none fw-bold">
-                                            Beecrowd 🔗
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary">DAR5EID</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Problems Solved: <span
-                                                    class="badge bg-primary">173</span></li>
-                                            <li class="list-group-item">Points: <span
-                                                    class="badge bg-success">473.57</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
+        <section class="container py-5" id="education">
+            <h2 class="text-center mb-5 fw-bold">Academic Background</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Education Timeline</h5>
+                        </div>
+                        <div class="card-body timeline">
+                            <div class="timeline-item">
+                                <h5>BSSE in Software Engineering</h5>
+                                <p class="text-muted mb-1">Noakhali Science and Technology University</p>
+                                <small class="text-primary">2022 - Present</small>
+                                <p class="mt-2">Current GPA: 3.75/4.00</p>
                             </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-header bg-danger text-white">
-                                        <a href="https://leetcode.com/DAR5EID/" target="_blank"
-                                            class="text-white text-decoration-none fw-bold">
-                                            LeetCode 🔗
-                                        </a>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary">DAR5EID</h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Problems Solved: <span
-                                                    class="badge bg-primary">114</span></li>
-                                            <li class="list-group-item">Contests Rating: <span
-                                                    class="badge bg-success">1,413</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="timeline-item">
+                                <h5>Higher Secondary Certificate</h5>
+                                <p class="text-muted mb-1">Govt. Hazi Muhammad Mohsin College</p>
+                                <small class="text-primary">2020</small>
+                                <p class="mt-2">GPA: 5.00/5.00</p>
                             </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-header bg-info text-white">
-                                        <strong>Overall Statistics</strong>
-                                    </div>
-                                    <div class="card-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Total Problems Solved: <span
-                                                    class="badge bg-primary">1000+</span></li>
-                                            <li class="list-group-item">Contests Participated: <span
-                                                    class="badge bg-success">100+</span></li>
-                                            <li class="list-group-item">Active Platforms: <span
-                                                    class="badge bg-warning text-dark">4+</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="timeline-item">
+                                <h5>Secondary School Certificate</h5>
+                                <p class="text-muted mb-1">Nasirabad Govt High School</p>
+                                <small class="text-primary">2018</small>
+                                <p class="mt-2">GPA: 5.00/5.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container py-5">
-        <h2 class="text-center mb-5 fw-bold">Leadership & Experience</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Vice President</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">IT Club, NSTU</h6>
-                        <p class="card-text">Leading technical initiatives and organizing programming contests</p>
+        <section class="container py-5" id="experience">
+            <h2 class="text-center mb-5 fw-bold">Experiences</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Vice President</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">IT Club, NSTU</h6>
+                            <p class="card-text">Leading technical initiatives and organizing programming contests</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Math Expert</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">PhotoMath</h6>
-                        <p class="card-text">Solving complex mathematical problems and creating solutions</p>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Math Expert</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">PhotoMath</h6>
+                            <p class="card-text">Solving complex mathematical problems and creating solutions</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="container py-5" id="projects">
-        <h2 class="text-center mb-5 fw-bold">Technical Projects</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="image/NSTU_Sportify.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">NSTU Sportify</h5>
-                        <p class="card-text">A sports management system built to manage events, teams, matches, and
-                            tournament results for NSTU. The project integrates a Django backend and a Flutter frontend
-                            for an interactive user experience.The NSTU Sportify System provides a platform to:
-                            Manage teams, players, matches, and tournaments.
-                            Enable role-based access control for admins, representatives, and general users.
-                            View past tournament winners, team details, and match schedules.
-                            Handle representative requests for approval/rejection by the admin.
-                            The project adheres to RESTful API principles, enabling a seamless connection between the backend and frontend.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-primary">Flutter</span>
-                            <span class="badge bg-primary">Django</span>
-                            <span class="badge bg-primary">MySQL</span>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <h5 class="card-title mb-0">Freelance Developer</h5>
+                                <span class="badge bg-success">Verified</span>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                <i class="fab fa-upwork me-2"></i>Upwork
+                            </h6>
+                            <ul class="card-text list-unstyled mb-0">
+                                <li class="mb-2">⭐ 100% Job Success</li>
+                                <li class="mb-2">✅ 15 Projects Completed</li>
+                            </ul>
+                            <a href="https://www.upwork.com/freelancers/~01a9cd265b60ea9c4c?mp_source=share" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-success btn-sm mt-3">
+                                View Profile <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
                         </div>
-                        <a href="https://github.com/MdMaruf-22/NSTU-Sportify" class="btn btn-outline-primary">GitHub</a>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <h5 class="card-title mb-0">Freelance Developer</h5>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                <i class="fas fa-code me-2"></i>Fiverr
+                            </h6>
+                            <ul class="card-text list-unstyled mb-0">
+                                <li class="mb-2">⭐ 5/5 Average Rating</li>
+                                <li class="mb-2">⏱️ Quick Delivery Specialist</li>
+                            </ul>
+                            <a href="https://www.fiverr.com/maruf_14/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-primary btn-sm mt-3">
+                                View Profile <i class="fas fa-external-link-alt ms-1"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="image/Skymate2.png" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">SkyMate</h5>
-                        <p class="card-text">
-                            This is a simple weather forecasting software, using OpenWeather API (<a
-                                href="https://openweathermap.org/" target="_blank">https://openweathermap.org/</a>). I
-                            followed the MVC (Model-Controller-View) model here.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-primary">Java</span>
-                        </div>
-                        <a href="https://github.com/MdMaruf-22/SkyMate" class="btn btn-outline-primary">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="image/DigitEyes.png" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">DigitEyes</h5>
-                        <p class="card-text">
-                            This Java software is designed to extract digits from handwritten images. It includes a
-                            simple user interface where users can select an image containing single handwritten digit,
-                            and the software will display the extracted digit as output.I used Machine Learning model
-                            without using any in built library.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge bg-primary">Java</span>
-                        </div>
-                        <a href="https://github.com/MdMaruf-22/DigitEyes" class="btn btn-outline-primary">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bg-light py-5" id="blogs">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Blogs & Tech Writings</h2>
+        <section class="bg-light py-5" id="achievements">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Notable Achievements</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3 text-primary">🏆</div>
+                                <h5>ICPC 2024</h5>
+                                <p class="text-muted">Dhaka Regional Participant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3 text-primary">🥇</div>
+                                <h5>1st Position</h5>
+                                <p class="text-muted">Inter Department Programming Contest 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3 text-primary">🥉</div>
+                                <h5>3rd Position</h5>
+                                <p class="text-muted">Intra NSTU programming contest 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="container py-5" id="gallery">
+            <h2 class="text-center mb-5 fw-bold">Moments Gallery</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 shadow">
+                    <div class="card shadow">
+                        <img src="image/icpc_image.jpg" class="card-img-top gallery-img" alt="Event Photo"
+                            loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Optimizing Algorithms</h5>
-                            <p class="card-text text-muted">Exploring efficient problem-solving techniques in
-                                competitive programming...</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Posted on March 15, 2024
+                            <p class="text-muted mb-0">ICPC 2024 Photo</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow">
+                    <div class="card shadow">
+                        <img src="image/icpc_team.jpg" class="card-img-top gallery-img" alt="Event Photo"
+                            loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Web Development Trends</h5>
-                            <p class="card-text text-muted">Modern approaches to full-stack development using JavaScript
-                                ecosystem...</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Posted on April 2, 2024
+                            <p class="text-muted mb-0">ICPC 2024 Team Photo</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow">
+                    <div class="card shadow">
+                        <img src="image/sports_winner.jpg" class="card-img-top gallery-img" alt="Event Photo"
+                            loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">AI in Programming</h5>
-                            <p class="card-text text-muted">Understanding machine learning applications in code
-                                optimization...</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                            <p class="text-muted mb-0">University Sports Week</p>
                         </div>
-                        <div class="card-footer text-muted">
-                            Posted on May 10, 2024
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="container py-5" id="gallery">
-        <h2 class="text-center mb-5 fw-bold">Moments Gallery</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="image/icpc_image.jpg" class="card-img-top gallery-img" alt="Event Photo">
-                    <div class="card-body">
-                        <p class="text-muted mb-0">ICPC 2024 Photo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="image/icpc_team.jpg" class="card-img-top gallery-img" alt="Event Photo">
-                    <div class="card-body">
-                        <p class="text-muted mb-0">ICPC 2024 Team Photo</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="image/sports_winner.jpg" class="card-img-top gallery-img" alt="Event Photo">
-                    <div class="card-body">
-                        <p class="text-muted mb-0">University Sports Week</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </main>
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p class="mb-2">Contact: marufislam74208@gmail.com</p>
+            <p class="mb-2">Contact: <a href="mailto:marufislam74208@gmail.com" class="text-white text-decoration-none">marufislam74208@gmail.com</a></p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="https://github.com/MdMaruf-22" class="text-white text-decoration-none">GitHub</a>
                 <a href="https://linkedin.com/in/mohammed-maruf-islam-545280248/"
