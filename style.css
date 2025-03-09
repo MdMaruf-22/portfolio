@@ -21,7 +21,7 @@ h5 {
 .hero-section {
     background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(0, 0, 0, 0.8));
     color: white;
-    padding: 80px 0 100px;
+    padding: 140px 0 100px;
     text-align: center;
     animation: fadeIn 1s ease-out;
 }
