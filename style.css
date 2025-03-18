@@ -313,3 +313,16 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.bg-gradient-dark {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+.rounded-4 {
+    border-radius: 1.5rem!important;
+}
