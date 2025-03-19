@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .projects-container {
+            padding: 60px 0;
+        }
+
+        .project-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .filter-buttons .btn {
+            transition: 0.3s ease-in-out;
+        }
+
+        .filter-buttons .btn:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .badge {
+            font-size: 14px;
+        }
+
+        /* Back Arrow Styling */
+        .back-arrow {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-arrow:hover {
+            transform: scale(1.1);
+            background-color: #007bff;
+            color: white !important;
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+
+        .back-arrow:active {
+            transform: scale(0.95);
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="projects-container container">
+        <a href="index.html" class="text-decoration-none text-dark back-arrow">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+        <h2 class="text-center fw-bold mb-4">All Projects</h2>
+
+        <div class="row g-4" id="projects-list">
+            <!-- Front Row Projects -->
+            <div class="col-md-4 project-card-container java">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/black_star.png" class="card-img-top project-img"
+                        alt="Black Stars Club Management System">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Stars Club Management System ⚽🌟</h5>
+                        <p class="card-text">A comprehensive platform to manage player data, match statistics, and club
+                            performance for the Black Stars eFootball game club.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-primary">Flutter</span>
+                            <span class="badge bg-primary">Firebase</span>
+                        </div>
+                        <a href="https://black-stars-f4fbb.web.app/" class="btn btn-outline-primary btn-sm"
+                            target="_blank">Live Website</a>
+                        <a href="https://github.com/your-username/black-stars-club-management"
+                            class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container flutter">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/NSTU_Sportify.jpg" class="card-img-top project-img" alt="NSTU Sportify">
+                    <div class="card-body">
+                        <h5 class="card-title">NSTU Sportify 🏆</h5>
+                        <p class="card-text">First ever sports management system for my university,Noakhali Science and
+                            Technology University, which handles all the sports related things such as notice , matches
+                            and tournaments.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Flutter</span>
+                            <span class="badge bg-primary">Django</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/NSTU-Sportify" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container ml">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/DigitEyes.png" class="card-img-top project-img" alt="DigitEyes">
+                    <div class="card-body">
+                        <h5 class="card-title">DigitEyes 🔢</h5>
+                        <p class="card-text">Handwritten digit recognition system using machine learning algorithm,
+                            without using any library, just raw coding in java.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">ML</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/DigitEyes" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects -->
+            <div class="col-md-4 project-card-container java">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/Skymate2.png" class="card-img-top project-img" alt="SkyMate">
+                    <div class="card-body">
+                        <h5 class="card-title">SkyMate ⛅</h5>
+                        <p class="card-text">Real-time weather app with OpenWeather API, which uses the
+                            MVC(Mode-Controller-View) model and it supports two languages Spanish and English.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">API</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/SkyMate" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container php">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/blogsphere.png" class="card-img-top project-img" alt="BlogSphere">
+                    <div class="card-body">
+                        <h5 class="card-title">BlogSphere 📝</h5>
+                        <p class="card-text">A web application for creating, editing, deleting, commenting, and liking
+                            blog posts with an admin panel.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-primary">CSS</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                            <span class="badge bg-primary">PHP</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/BlogSphere" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container python">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/recipe-recommender.png" class="card-img-top project-img"
+                        alt="Recipe Recommender System">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe Recommender System 🍽️</h5>
+                        <p class="card-text">A machine learning-powered app that recommends recipes based on available
+                            ingredients.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-primary">Streamlit</span>
+                            <span class="badge bg-primary">ML</span>
+                            <span class="badge bg-primary">Random Forest</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/recipe-recommender"
+                            class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container java">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/HideIt.png" class="card-img-top project-img" alt="HideIt">
+                    <div class="card-body">
+                        <h5 class="card-title">HideIt 🕵️‍♂️</h5>
+                        <p class="card-text">A simple steganography tool that hides and retrieves secret messages in
+                            images using Java's Swing framework.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">Swing</span>
+                            <span class="badge bg-primary">Steganography</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/HideIt" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container java">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/expense-tracker.jpg" class="card-img-top project-img" alt="Expense Tracker">
+                    <div class="card-body">
+                        <h5 class="card-title">Expense Tracker 💰</h5>
+                        <p class="card-text">A project to help users manage their personal finances by tracking income
+                            and expenses with insightful summaries and reports, built using Java and Swing.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">Swing</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/Expense-Tracker" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card-container java">
+                <div class="card project-card h-100 shadow">
+                    <img src="image/pingpong.png" class="card-img-top project-img" alt="PingPong">
+                    <div class="card-body">
+                        <h5 class="card-title">PingPong 🎮</h5>
+                        <p class="card-text">A Java-based ping-pong game that implements basic mechanics and allows
+                            single-player and multiplayer modes.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <span class="badge bg-primary">Java</span>
+                        </div>
+                        <a href="https://github.com/MdMaruf-22/PingPong" class="btn btn-outline-primary btn-sm"
+                            target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
